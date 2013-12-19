@@ -186,6 +186,7 @@ module Wordmove
         arguments = [ "mysqldump" ]
         arguments << "--host=#{options[:host]}" if options[:host].present?
         arguments << "--port=#{options[:port]}" if options[:port].present?
+        arguments << "--socket=#{options[:socket]}" if options[:socket].present?
         arguments << "--user=#{options[:user]}" if options[:user].present?
         arguments << "--password=#{options[:password]}" if options[:password].present?
         arguments << "--default-character-set=#{options[:charset]}" if options[:charset].present?
