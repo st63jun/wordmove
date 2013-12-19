@@ -68,6 +68,7 @@ staging:
     password: "password"
     host: "host"
     # port: "3308" # Use just in case you have exotic server config
+    # socket: "/tmp/mysql.sock" # If you'd like to use UNIX socket, put path here
 
   exclude:
     - ".git/"
