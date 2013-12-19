@@ -198,6 +198,7 @@ module Wordmove
         arguments = [ "mysql" ]
         arguments << "--host=#{options[:host]}" if options[:host].present?
         arguments << "--user=#{options[:user]}" if options[:user].present?
+        arguments << "--socket=#{options[:socket]}" if options[:socket].present?
         arguments << "--password=#{options[:password]}" if options[:password].present?
         arguments << "--database=#{options[:name]}"
         Escape.shell_command(arguments) + " < #{dump_path}"
